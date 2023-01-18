@@ -1,5 +1,5 @@
 //Your site's directory defined in IIS on the target machine
-String iisApplicationPath = "C:\inetpub\wwwroot\webdashboard"
+String iisApplicationPath = "C:\\inetpub\\wwwroot\\webdashboard"
 pipeline {
     agent any
 

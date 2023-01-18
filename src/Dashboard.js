@@ -1,10 +1,10 @@
 //import React from 'react';
-import React, {useState,setState} from 'react';
-import Chart from "chart.js/auto";
+import React, {useState} from 'react';
+//import Chart from "chart.js/auto";
 
 import { Line } from "react-chartjs-2";
 import { Bar } from "react-chartjs-2";
-import { Pie } from "react-chartjs-2";
+//import { Pie } from "react-chartjs-2";
 
 // const data = {   
 //     labels: ["Jun 2022","Jul 2022","Aug 2022","Sep 2022","Oct 2022","Nov 2022"],

@@ -1,3 +1,5 @@
+//Your site's directory defined in IIS on the target machine
+String iisApplicationPath = "C:\inetpub\wwwroot\webdashboard"
 pipeline {
     agent any
 
@@ -7,7 +9,7 @@ pipeline {
                                           
                 bat "npm install"
                 bat "npm run build"
-                bat "node -v"
+               
             }
         }
         stage('Test') {
@@ -17,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat("xcopy $WORKSPACE\\build ${iisApplicationPath} /O /X /E /H /K /Y")
             }
         }
     }

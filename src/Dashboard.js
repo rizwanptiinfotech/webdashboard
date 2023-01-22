@@ -50,7 +50,7 @@ function Dashboard() {
 // }, []); 
 
 function fnGraphsData() {
-    fetch("/api/getgraphdata", {
+    fetch("http://api.tidashboard.com/api/getgraphdata", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({"noOfMonts": 6 , "bookingTypes": 'Tickets', "companyId": compid })

@@ -58,7 +58,7 @@ function fnGraphsData() {
      .then((res) => res.json())
      .then((ticketsdata) => setTicketsData(ticketsdata)); 
 
-     fetch("/api/getgraphdata", {
+     fetch("http://api.tidashboard.com:3001/api/getgraphdata", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({"noOfMonts": 6 , "bookingTypes": 'Bookings', "companyId": compid })

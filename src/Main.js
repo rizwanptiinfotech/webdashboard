@@ -16,20 +16,20 @@ class Main extends Component {
     return (
         <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
+          <h1>Booking/Tickets Dashboard</h1>
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
+            {/* <li><NavLink to="/stuff">Stuff</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
-            <li><NavLink to="/registrationform">Registration Form</NavLink></li>
-            <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+            <li><NavLink to="/registrationform">Registration Form</NavLink></li> */}
+            <li><NavLink to="/dashboard">View Dashboard</NavLink></li>
           </ul>
           <div className="content">
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
-                <Route path="/stuff" element={<Stuff/>}/>
+                {/* <Route path="/stuff" element={<Stuff/>}/>
                 <Route path="/contact" element={<Contact/>}/>
-                <Route path="/registrationform" element={<RegistrationForm/>}/>
+                <Route path="/registrationform" element={<RegistrationForm/>}/> */}
                 <Route path="/dashboard" element={<Dashboard/>}/>
             </Routes>
           </div>

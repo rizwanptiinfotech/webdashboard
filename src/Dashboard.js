@@ -1,6 +1,6 @@
 //import React from 'react';
 import React, {useState} from 'react';
-//import Chart from "chart.js/auto";
+import Chart from "chart.js/auto";
 
 import { Line } from "react-chartjs-2";
 import { Bar } from "react-chartjs-2";

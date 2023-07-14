@@ -16,7 +16,8 @@ class Main extends Component {
     return (
         <HashRouter>
         <div>
-          <h1>Booking/Tickets Dashboard</h1>
+          <img src="logo.png"></img>
+          {/* <h1>Searched Data Analysis Dashboard</h1> */}
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
             {/* <li><NavLink to="/stuff">Stuff</NavLink></li>
@@ -35,7 +36,7 @@ class Main extends Component {
           </div>
         </div>
         <div id="footer">
-        <p>© 2022 Rizwan Parwej, All Rights Reserved.</p>
+        <p>© 2023 Rizwan Parwej, All Rights Reserved.</p>
         </div>
       </HashRouter>
     );
